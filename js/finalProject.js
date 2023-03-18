@@ -35,14 +35,13 @@ const labelYear= ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017"
 
    
     const dataObj = {
-        labels: labelYear,           //we want the x axis to be the years
+        labels: labelYear,           
         datasets: [
             {
-                label: "Indonesia",// uncomment this line and set this to "Accountancy" for example
-                data: [7630,7630,7520,7470,7400,7410,7450,7540,7590,7660],// uncomment this line and set this to an array [] with commas that are the bold numbers next to Accountancy for example
+                label: "Indonesia",
+                data: [7630,7630,7520,7470,7400,7410,7450,7540,7590,7660],
                 borderWidth: 2,
-                backgroundColor: "rgb(92,34,23)",//put a color here as rgb(0,0,255) or hsla(20,100%,80%,0.8) format, from https://imagecolorpicker.com/en or https://color.adobe.com/ (explore the Triad radio button on the left)
-                borderColor: "rgb(92,34,23)"//put black rgb(0,0,0) or the same color as above
+                backgroundColor: "rgb(92,34,23)",
             },
             {
                 label: "Japan",
@@ -83,7 +82,7 @@ const labelYear= ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017"
                     },
                     title: {
                         display: true,
-                        text: ['Number of deaths','from self-inflicted injury'],//set this to 'Number of female graduates','per Course'
+                        text: ['Number of deaths','from self-inflicted injury'],
                         fontFamily: "TrebuchetMS",
                         fontSize: 24,
                         fontColor: 'rgb(0,0,0)',
@@ -93,14 +92,14 @@ const labelYear= ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017"
 
     const labelYear1= [2013,2014,2015,2016,2017,2018,2019]
     const dataObj1 = {
-        labels: labelYear1,           //we want the x axis to be the years
+        labels: labelYear1,           
         datasets: [
             {
-                label: "No. of persons who sought care for a psychiatric condition",// uncomment this line and set this to "Accountancy" for example
-                data: [14084, 16478, 18159, 20267, 21592, 23732, 25639],// uncomment this line and set this to an array [] with commas that are the bold numbers next to Accountancy for example
+                label: "No. of persons who sought care for a psychiatric condition",
+                data: [14084, 16478, 18159, 20267, 21592, 23732, 25639],
                 fill: false,
                 borderColor:"rgb(75,192,192)",
-                tension: 0.1 //put black rgb(0,0,0) or the same color as above
+                tension: 0.1
             }]};
 
             new Chart("new-chart",
@@ -113,3 +112,6 @@ const labelYear= ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017"
                   } 
 
     )
+    //add function here to calculate rate of increase in people who sought help in Singapore 
+    //add function here to trigger alert when user clicks on "click me!" button 
+    //add click counter which counts everytime the user clicks on "click me!" button 
