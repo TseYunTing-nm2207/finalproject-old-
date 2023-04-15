@@ -12,6 +12,8 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
+
+
 // smooth scroll
 $(document).ready(function(){
 	$(".nav-link").on('click', function(event) {
@@ -113,5 +115,20 @@ const labelYear= ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017"
 
     )
     //add function here to calculate rate of increase in people who sought help in Singapore 
-    //add function here to trigger alert when user clicks on "click me!" button 
+    var x = 25639
+    var y = 14084
+    var difference = x - y 
+    var result = difference / 7
+    let finalResult = result.toFixed(2);
+    
+document.getElementById("rate-of-increase").innerHTML = "Rate of increase in people who sought help in Singapore is " + finalResult + " per year." 
+     
+
     //add click counter which counts everytime the user clicks on "click me!" button 
+
+    var button = document.getElementById("kindness-button"),
+    count = 0;
+    button.onclick = function() {
+    count += 1;
+    document.getElementById("clicks").innerHTML = count;
+    };
